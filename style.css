@@ -1,0 +1,305 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(68, 8, 8);
+    color: #fff;
+    scroll-behavior: smooth; /* Add this line for smooth scrolling */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgb(68, 8, 8);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed; /* Fixed header */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #f0a500;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #f0a500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d88a00;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px; /* Adjust for fixed header */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero h1 span {
+    color: #f0a500;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f0a500;
+}
+
+.about, .services {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.about .container, .services .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about h2, .services h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.download-cv-button {
+    background-color: #ffcc00; /* You can change the color */
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.download-cv-button:hover {
+    background-color: #ffa500; /* Hover color */
+}
+
+.info, .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-item, .service-item {
+    margin: 10px;
+    max-width: 45%;
+}
+
+.info-item img {
+    width: 100%;
+    max-width: 300px; /* Menetapkan lebar maksimum */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info-item h3, .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.info-item p, .service-item p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.service-item {
+    background-color: rgb(95, 29, 29);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.skills .container {
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.skills h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-item {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #f0a500;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Menyesuaikan lebar maksimum form */
+    margin-left: 0px; /* Pusatkan form di kiri halaman */
+    padding: 20px; /* Menambahkan padding agar lebih nyaman */
+    background-color: rgb(105, 37, 37);
+    border-radius: 50px;
+    margin-bottom: 55px;
+}
+
+/* Mengurangi tinggi form */
+.form-group {
+    margin-bottom: 15px; /* Menambahkan jarak antar form-group */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 22px); /* Mengatur lebar input minus padding dan border */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: calc(100% - 22px); /* Mengatur lebar textarea yang sama dengan input */
+    resize: vertical; /* Biarkan textarea dapat diresize secara vertikal */
+}
+
+.btn {
+    background-color: #f0a500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 17px;
+}
+
+.btn:hover {
+    background-color: #d88a00;
+}
+
+footer {
+    background-color: rgb(49, 7, 7);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    padding: 0 20px;
+}
